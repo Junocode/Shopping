@@ -1,0 +1,108 @@
+:root {
+  --size-medium: 60px;
+  --size-large: 80px;
+  --size-small: 40px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+body {
+  width: 500px;
+  height: 600px;
+  border: 3px solid brown;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+  background-color: rgb(187, 209, 125);
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border-style: none;
+}
+
+button:hover,
+.collect img {
+  cursor: pointer;
+}
+
+/* Home button */
+.home img {
+  width: var(--size-large);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+/* collect button */
+
+.collect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.collect li {
+  padding: 0px 10px;
+}
+
+.collect button {
+  width: 60px;
+  height: 40px;
+}
+
+.collect img {
+  width: var(--size-medium);
+}
+
+.collect .pink_button {
+  background-color: rgb(194, 121, 133);
+}
+
+.collect .blue_button {
+  background-color: rgb(89, 89, 189);
+}
+
+.collect .yellow_button {
+  background-color: rgb(228, 228, 15);
+}
+
+/* list */
+
+.shopping_list {
+  margin-top: 30px;
+  width: 450px;
+  height: 600px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.shopping_list img {
+  width: var(--size-small);
+}
+
+.shopping_list li {
+  background-color: whitesmoke;
+  margin-top: 5px;
+  padding-left: 10px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.shopping_list li span {
+  padding-left: 10px;
+}
