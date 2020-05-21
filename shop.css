@@ -114,4 +114,5 @@ button:hover,
 
 .shopping_list li span {
   padding-left: 10px;
+  font-weight: bold;
 }
