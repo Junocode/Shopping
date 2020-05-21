@@ -45,8 +45,12 @@ button:hover,
   align-items: center;
   margin-top: 15px;
 }
-/* collect button */
 
+.home:hover {
+  cursor: pointer;
+}
+
+/* collect button */
 .collect {
   display: flex;
   justify-content: center;
@@ -80,13 +84,18 @@ button:hover,
 }
 
 /* list */
-
 .shopping_list {
   margin-top: 30px;
   width: 450px;
   height: 600px;
-  overflow-y: auto;
-  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.shopping_list::-webkit-scrollbar {
+  display: none;
 }
 
 .shopping_list img {
